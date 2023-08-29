@@ -45,7 +45,7 @@ a {
 }
 
 body {
-  background: #e6e6e6;
+  background: #fff7f2;
   display: grid;
   justify-items: center;
   grid-template-rows: 2fr 4fr;
@@ -92,11 +92,11 @@ body {
 }
 
 .player__wrapper {
-  border-radius: 50px;
+  border-radius: 20px;
   background: #e6e6e6;
-  box-shadow: 20px 20px 37px #cdcdcd, -20px -20px 37px #ffffff;
-  padding: 4vh 5.5vw 4.5vh 5.5vw;
-  max-width: 500px;
+  
+  padding: 2vh 2.75vw 2.25vh 2.75vw;
+  max-width: 200px;
   align-self: start;
   margin: 0 2vw;
 }
@@ -112,7 +112,7 @@ body {
 }
 
 button {
-  font-size: 1.3rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   border: none;
   color: #9b9b9b;
@@ -140,23 +140,24 @@ button:hover {
 }
 
 #a__button {
-  width: 8rem;
+  width: 5.5rem;
   border-radius: 12px 0 0 12px;
   justify-self: self-end;
 }
 
 #b__button {
-  width: 8rem;
+  width: 5.5rem;
   border-radius: 0 12px 12px 0;
   justify-self: self-start;
 }
 
 #play__button {
+  width: 5.0rem;
   justify-self: self-end;
 }
 
 #stop__button {
-  width: 5rem;
+  width: 5.0rem;
   color: #966f6f;
   justify-self: self-start;
 }
@@ -170,7 +171,7 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  grid-gap: 1rem;
+  grid-gap: 0.7rem;
 }
 
 .progress__container {
@@ -178,7 +179,7 @@ button:hover {
   background: #a8a8a8;
   height: 1rem;
   width: 100%;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.0rem;
   border-radius: 10px;
   border-radius: 12px;
   background: #e6e6e6;
@@ -188,7 +189,7 @@ button:hover {
 }
 
 .progress__bar {
-  background: linear-gradient(360deg, #2da87b, #34dcacfa);
+  background: linear-gradient(360deg, #9c6009, #ed920e);
   border-radius: 12px;
   transition: all ease-in-out 0.03s;
 }
