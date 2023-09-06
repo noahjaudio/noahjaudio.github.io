@@ -1,7 +1,7 @@
 //Set up audio elements
 var soundA = document.createElement("audio");
 //Set audio A src here
-soundA.src = "./assets/a.mp3";
+soundA.src = "./assets/compare1/a.mp3";
 soundA.preload = "auto";
 soundA.setAttribute("hidden", "true");
 soundA.setAttribute("onplaying", "stepA()");
@@ -9,7 +9,7 @@ document.body.append(soundA);
 
 var soundB = document.createElement("audio");
 //Set audio B src here
-soundB.src = "./assets/b.mp3";
+soundB.src = "./assets/compare1/b.mp3";
 soundB.preload = "auto";
 soundB.setAttribute("hidden", "true");
 soundB.setAttribute("onplaying", "stepB()");
