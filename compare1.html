@@ -38,49 +38,33 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body>
-   
+  <<body>
+    
     <div class="player__wrapper">
-      <div class="progress__container" id="progress">
-        <div class="progress__bar" id="progress__fill"></div>
-      </div>
-      <div class="ab__controls">
-        <button
-          class="ab__button"
-          id="a__button"
-          onclick="playSoundA()"
-          disabled="true"
-        >
-          Before
-        </button>
-        <button
-          class="ab__button"
-          id="b__button"
-          onclick="playSoundB()"
-          disabled="true"
-        >
-          After
-        </button>
-      </div>
-      <div class="play__stop__controls">
-        <button
-          class="play__pause__button"
-          id="play__button"
-          onclick="playPause()"
-          disabled="true"
-        >
-          <i class="fa-solid fa-play"></i>
-        </button>
-        <button
-          class="play__pause__button"
-          id="stop__button"
-          onclick="stopSounds()"
-          disabled="true"
-        >
-          <i class="fa-solid fa-stop"></i>
-        </button>
-      </div>
+        <div class="control-grid">
+            <div class="item">
+                <div class="progress__container" id="progress">
+                    <div class="progress__bar" id="progress__fill"></div>
+                </div>
+            </div>
+            <div class="item">
+                <button class="play__pause__button" id="play__button" onclick="playPause()" disabled="true" ><i class="fa-solid fa-play"></i></button>
+            </div>
+
+            <div class="item">
+                <button class="ab__button" id="a__button" onclick="playSoundA()" disabled="true" >Before</button>
+            </div>
+
+            <div class="item">
+                <button class="ab__button" id="b__button" onclick="playSoundB()" disabled="true" >After</button>
+            </div>
+
+            <div class="item">
+                <button class="play__pause__button" id="stop__button" onclick="stopSounds()" disabled="true" ><i class="fa-solid fa-stop"></i></button>
+            </div>
+            
+        </div>
     </div>
     <script src="./js/ab-player1.js"></script>
-  </body>
+</body>
 </html>
